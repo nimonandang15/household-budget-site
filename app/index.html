@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearth &amp; Ledger — Household Budget</title>
+<meta name="description" content="Hearth & Ledger keeps one household's money in order: monthly budgets, every transaction, savings goals, bills and six-month reports.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/">
+    <span class="brand-mark" aria-hidden="true">⌂</span>
+    <span class="brand-name">Hearth <span>&amp;</span> Ledger</span>
+    <span class="brand-tag">The Marlow household budget</span>
+  </a>
+  <nav class="mainnav" aria-label="Sections">
+    <a href="#/" data-nav="dashboard">Dashboard</a>
+    <a href="#/transactions" data-nav="transactions">Transactions</a>
+    <a href="#/budgets" data-nav="budgets">Budgets</a>
+    <a href="#/goals" data-nav="goals">Goals</a>
+    <a href="#/bills" data-nav="bills">Bills</a>
+    <a href="#/reports" data-nav="reports">Reports</a>
+  </nav>
+  <div class="monthbox">
+    <label for="monthPick">Month</label>
+    <select id="monthPick" aria-label="Month shown"></select>
+  </div>
+</header>
+<main id="view" class="view" aria-live="polite"></main>
+<footer class="foot">
+  <p>Hearth &amp; Ledger — a household budget kept by the Marlow family. Figures are the household's own records for November 2026; nothing here leaves your browser.</p>
+  <p><a href="#/reports">Six-month report</a> · <a href="#/bills">Upcoming bills</a> · <a href="#/goals">Savings goals</a></p>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
